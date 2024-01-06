@@ -72,7 +72,7 @@ data = response.json()["articles"][:3]
 formatted_articles = [f"{STOCK}: {up_down}{difference_percentage}%\nHeadline: {article['title']}\nBrief: {article['description']}" for article in data]
 
 for article in data:
-    client = Client(twilio_account_sid, twillio_auth_token)
+    client = Client(twilio_account_sid, twilio_auth_token)
     message = client.messages.create(
         body= formatted_articles,
         from_='+1 555 555-5555',
