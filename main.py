@@ -15,7 +15,7 @@ NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 # twilio account
 twilio_account_sid = os.getenv("TWILIO_ACCOUNT_SID")
-twillio_auth_token = os.getenv("TWILIO_AUTH_TOKEN")
+twilio_auth_token = os.getenv("TWILIO_AUTH_TOKEN")
 
 ## STEP 1: Use https://www.alphavantage.co
 # When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print("Get News").
